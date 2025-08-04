@@ -3,11 +3,16 @@ export default function Main() {
     <div className="main">
       <div className="about">
         <h3>About</h3>
-        <p>I am a full stack developer with a passion for building web applications. I am a quick learner and I am always looking to expand my knowledge.</p>
+        <p>I enjoy solving real-world problems through software, whether it’s 
+            building full-stack applications, optimizing backend performance, 
+            or working with distributed systems. I’ve developed tools that 
+            improve student advising, automate data-driven insights, and enhance 
+            system efficiency. With experience across React, Node.js, Python, 
+            and cloud-native architectures.</p>
       </div>
       <div className="interests">
-        <h3>Interests</h3>
-        <p>I am a full stack developer with a passion for building web applications. I am a quick learner and I am always looking to expand my knowledge.</p>
+        <h3>Tech Stack</h3>
+        <p> • React • TypeScript • Node.js • Python <br />• Docker • AWS • GraphQL • PostgreSQL  <br />• Redis • Kubernetes • Next.js <br />• TailwindCSS • Machine Learning</p>
       </div>
     </div>
   )
