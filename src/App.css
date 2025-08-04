@@ -30,7 +30,6 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(209, 213, 219, 1);
   box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
- 
 }
 
 img {
@@ -106,4 +105,30 @@ img {
 .email-btn:hover, .linkedin-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 247px;
+  height: 201px;
+  color: white;
+  margin-left: 10px;
+  gap: 0px;
+}
+
+.about h3, .interests h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+
+.about p, .interests p {
+  font-weight: 300;
+  font-size: 10.24px;
+  text-align: justify;
+  color: #DCDCDC;
 }
