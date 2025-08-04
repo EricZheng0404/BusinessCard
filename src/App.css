@@ -132,3 +132,35 @@ img {
   text-align: justify;
   color: #DCDCDC;
 }
+
+.footer {
+  display: flex;
+  background-color: #161619;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #918E9B;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.social-icon i {
+  color: #161619;
+  font-size: 14px;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
