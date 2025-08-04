@@ -1,23 +1,109 @@
+* {
+  font-family: Inter, sans-serif;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 body {
-  width: 550px;
-  height: 868px;
-  padding: 53px 664px;
-  background-color: #23252C
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #23252C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   width: 317px;
-  height: 780px;
-  padding: 44px 116px;
+  height:850px;
   background-color: rgba(26, 27, 33, 1);
   border-radius: 20px;
   border: 1px solid rgba(209, 213, 219, 1);
   box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
+ 
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.name h1 {
+  width: 178.06px;
+  height: 25.81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+}
+
+.name h2 {
+  width: 178.06px;
+  height: 25.81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12.8px;
+  color: #F3BF99;
+}
+
+.contacts {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.email-btn, .linkedin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 13px 9px 11px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 34px;
+  width: 115px;
+}
+
+.email-btn {
+  background-color: white;
+  color: #374151;
+}
+
+.linkedin-btn {
+  background-color: #5093E2;
+  color: white;
+}
+
+.email-btn:hover, .linkedin-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
