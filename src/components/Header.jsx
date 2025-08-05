@@ -10,14 +10,15 @@ export default function Header() {
         <h2 className="typing-effect">Full Stack Developer</h2>
       </div>
       <div className="contacts">
-        <button type="button" className="email-btn">
+        <a href="mailto:erryzheng@gmail.com" className="email-btn">
           <i className="fas fa-envelope"></i>
           Email
-        </button>
-        <button type="button" className="linkedin-btn">
+        </a>
+        <a href="https://www.linkedin.com/in/ericzheng0404/" 
+        className="linkedin-btn" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
           LinkedIn
-        </button>
+        </a>
       </div>
     </div>
   )

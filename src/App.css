@@ -6,7 +6,6 @@
 
 #root {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -56,10 +55,8 @@ body {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  /* background: linear-gradient(45deg, #00d4aa, #00a8ff, #9c88ff); */
   padding: 3px;
   margin-bottom: 1rem;
-  /* animation: profileGlow 3s ease-in-out infinite alternate; */
 }
 
 .profile-container img {
@@ -89,7 +86,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0.0rem 0;
-  /* text-shadow: 0 0 30px rgba(0, 212, 170, 0.3); */
 }
 
 .name h2 {
@@ -118,7 +114,8 @@ body {
 .contacts {
   display: flex;
   gap: 17px;
-  justify-content: center;
+  
+  justify-content: space-evenly;
   margin-top: 15px;
   padding: 0 35px;
 }
@@ -135,10 +132,12 @@ body {
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  height: 44px;
-  width: 120px;
+  height: 20px;
+  width: 110px;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .email-btn {
@@ -154,22 +153,7 @@ body {
 }
 
 .email-btn:hover, .linkedin-btn:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 
-    0 8px 25px rgba(0, 0, 0, 0.15),
-    0 0 20px rgba(0, 212, 170, 0.2);
-}
-
-.email-btn:hover {
-  box-shadow: 
-    0 8px 25px rgba(0, 0, 0, 0.15),
-    0 0 20px rgba(0, 212, 170, 0.3);
-}
-
-.linkedin-btn:hover {
-  box-shadow: 
-    0 8px 25px rgba(0, 0, 0, 0.15),
-    0 0 20px rgba(0, 168, 255, 0.4);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .main {
@@ -195,12 +179,6 @@ body {
   transition: all 0.3s ease;
   width: 100%;
   box-sizing: border-box;
-}
-
-.about:hover, .interests:hover {
-  border-color: rgb(42, 42, 43);
-  background: rgb(42, 42, 43);
-  transform: translateY(-5px) scale(1.02);
 }
 
 .about h3, .interests h3 {
