@@ -132,7 +132,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   height: 20px;
   width: 110px;
   position: relative;
@@ -155,6 +155,14 @@ body {
 
 .email-btn:hover, .linkedin-btn:hover {
   transform: translateY(-3px) scale(1.05);
+}
+
+.email-btn:hover {
+  color: #1f2937;
+}
+
+.linkedin-btn:hover {
+  color: white;
 }
 
 .main {
@@ -256,9 +264,6 @@ body {
 
 .social-icon:hover {
   transform: translateY(-3px) scale(1.05);
-}
-
-.social-icon:hover i {
   color: #ffffff;
 }
 
