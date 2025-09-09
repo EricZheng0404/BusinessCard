@@ -12,24 +12,22 @@ import {
 
 export default function Main() {
   return (
-    <div className="main grid gap-8 p-6 md:grid-cols-2">
+    <div className="main">
       {/* About Section */}
-      <div className="about bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
-        <h3 className="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">
-          About
-        </h3>
-        <div className="space-y-4 text-gray-700 leading-relaxed">
+      <div className="about">
+        <h3>About</h3>
+        <div>
           <p>
             🤓 Passionate about crafting impactful software solutions—from 
-            intuitive <span className="font-medium text-blue-600">full-stack applications</span> 
-            to resilient <span className="font-medium text-blue-600">distributed systems</span>—
+            intuitive <span>full-stack applications</span> 
+            to resilient <span>distributed systems</span>—
             that empower people, uncover insights, and make technology 
             feel seamless. Experienced across React, Node.js, Python, and 
             cloud-native architectures.
           </p>
           <p>
-            🐕 A curious soul beyond the code: a devoted <span className="italic">pet lover</span>, 
-            <span className="italic"> music enthusiast</span>, and <span className="italic">traveler</span>, 
+            🐕 A curious soul beyond the code: a devoted <span>pet lover</span>, 
+            <span> music enthusiast</span>, and <span>traveler</span>, 
             always seeking stories, rhythms, and adventures that inspire both life and work.
           </p>
         </div>
