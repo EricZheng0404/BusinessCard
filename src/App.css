@@ -49,14 +49,14 @@ body {
   justify-content: center;
   position: relative;
   z-index: 1;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .profile-container {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  padding: 3px;
+  padding: 0px;
   margin-bottom: 1rem;
 }
 
@@ -118,7 +118,7 @@ body {
   
   justify-content: space-evenly;
   margin-top: 15px;
-  padding: 0 35px;
+  padding: 0px;
 }
 
 .email-btn, .linkedin-btn {
@@ -183,7 +183,7 @@ body {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(0, 212, 170, 0.1);
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   width: 100%;
@@ -245,6 +245,7 @@ body {
   overflow: hidden;
 }
 
+
 .social-icon::before {
   content: '';
   position: absolute;
@@ -273,6 +274,52 @@ body {
   font-size: 11px;
   letter-spacing: 0.5px;
 }
+
+/* Tech stack skills layout */
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tech-skill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-skill:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(0, 212, 170, 0.4);
+  transform: translateY(-1px);
+}
+
+.tech-skill svg {
+  font-size: 16px;
+}
+
+/* Icon colors for tech stack */
+.tech-skill .react-icon { color: #61dafb; }
+.tech-skill .typescript-icon { color: #3178c6; }
+.tech-skill .nodejs-icon { color: #339933; }
+.tech-skill .python-icon { color: #3776ab; }
+.tech-skill .docker-icon { color: #2496ed; }
+.tech-skill .aws-icon { color: #ff9900; }
+.tech-skill .graphql-icon { color: #e10098; }
+.tech-skill .postgresql-icon { color: #336791; }
+.tech-skill .redis-icon { color: #dc382d; }
+.tech-skill .kubernetes-icon { color: #326ce5; }
+.tech-skill .nextjs-icon { color: #000000; }
+.tech-skill .tailwind-icon { color: #06b6d4; }
 
 /* Custom scrollbar styling */
 .container::-webkit-scrollbar {
