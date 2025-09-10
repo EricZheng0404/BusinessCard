@@ -1,14 +1,3 @@
-import { FaAws, FaDocker, FaNodeJs, FaReact } from "react-icons/fa";
-import { 
-  SiGraphql, 
-  SiKubernetes, 
-  SiNextdotjs, 
-  SiPostgresql, 
-  SiPython, 
-  SiRedis, 
-  SiTailwindcss, 
-  SiTypescript 
-} from "react-icons/si";
 
 export default function Main() {
   return (
@@ -19,72 +8,33 @@ export default function Main() {
         <div>
           <p>
             🤓 Passionate about crafting impactful software solutions—from 
-            intuitive <span>full-stack applications</span> 
-            to resilient <span>distributed systems</span>—
+            intuitive <span style={{color: '#3B82F6', fontWeight: '600'}}>full-stack applications</span> 
+            to resilient <span style={{color: '#3B82F6', fontWeight: '600'}}>distributed systems</span>—
             that empower people, uncover insights, and make technology 
             feel seamless. Experienced across React, Node.js, Python, and 
             cloud-native architectures.
           </p>
           <p>
-            🐕 A curious soul beyond the code: a devoted <span>pet lover</span>, 
-            <span> music enthusiast</span>, and <span>traveler</span>, 
+            🐕 A curious soul beyond the code: a devoted <span style={{color: '#3B82F6', fontWeight: '600'}}>pet lover</span>, 
+            <span style={{color: '#3B82F6', fontWeight: '600'}}> music enthusiast</span>, and <span style={{color: '#3B82F6', fontWeight: '600'}}>traveler</span>, 
             always seeking stories, rhythms, and adventures that inspire both life and work.
           </p>
         </div>
       </div>
 
-      {/* Tech Stack Section */}
+      {/* Philosophy Section */}
       <div className="interests">
-        <h3>Tech Stack</h3>
-        <div className="tech-stack-container">
-          <div className="tech-skill">
-            <FaReact className="react-icon" />
-            <span>React</span>
-          </div>
-          <div className="tech-skill">
-            <SiTypescript className="typescript-icon" />
-            <span>TypeScript</span>
-          </div>
-          <div className="tech-skill">
-            <FaNodeJs className="nodejs-icon" />
-            <span>Node.js</span>
-          </div>
-          <div className="tech-skill">
-            <SiPython className="python-icon" />
-            <span>Python</span>
-          </div>
-          <div className="tech-skill">
-            <FaDocker className="docker-icon" />
-            <span>Docker</span>
-          </div>
-          <div className="tech-skill">
-            <FaAws className="aws-icon" />
-            <span>AWS</span>
-          </div>
-          <div className="tech-skill">
-            <SiGraphql className="graphql-icon" />
-            <span>GraphQL</span>
-          </div>
-          <div className="tech-skill">
-            <SiPostgresql className="postgresql-icon" />
-            <span>PostgreSQL</span>
-          </div>
-          <div className="tech-skill">
-            <SiRedis className="redis-icon" />
-            <span>Redis</span>
-          </div>
-          <div className="tech-skill">
-            <SiKubernetes className="kubernetes-icon" />
-            <span>Kubernetes</span>
-          </div>
-          <div className="tech-skill">
-            <SiNextdotjs className="nextjs-icon" />
-            <span>Next.js</span>
-          </div>
-          <div className="tech-skill">
-            <SiTailwindcss className="tailwind-icon" />
-            <span>TailwindCSS</span>
-          </div>
+        <h3>Philosophy</h3>
+        <div>
+          <p>
+            💡 I believe in writing <span style={{color: '#3B82F6', fontWeight: '600'}}>clean, maintainable code</span> that not only solves problems 
+            but tells a story. Every line should have purpose, every function should be elegant, 
+            and every system should be built to last.
+          </p>
+          <p>
+            🚀 Constantly learning and evolving, I embrace new technologies while respecting 
+            the fundamentals that make great software possible.
+          </p>
         </div>
       </div>
     </div>

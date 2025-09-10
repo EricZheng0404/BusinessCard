@@ -7,7 +7,7 @@ export default function Header() {
       </div>
       <div className="name">
         <h1>Eric Zheng</h1>
-        <h2 className="typing-effect">Full Stack Developer</h2>
+        <h2 className="typing-effect">Full Stack Developer and more...</h2>
       </div>
       <div className="contacts">
         <a href="mailto:erryzheng@gmail.com" className="email-btn">
@@ -18,6 +18,11 @@ export default function Header() {
         className="linkedin-btn" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
           LinkedIn
+        </a>
+        <a href="/Eric_Zheng_Resume.pdf" 
+        className="resume-btn" target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-file-pdf"></i>
+          Resume
         </a>
       </div>
     </div>
