@@ -19,7 +19,7 @@ export default function Header() {
           <i className="fab fa-linkedin"></i>
           LinkedIn
         </a>
-        <a href={`${import.meta.env.BASE_URL}Eric_Zheng_Resume.pdf`} 
+        <a href={`${import.meta.env.BASE_URL}music/Eric_Zheng_Resume.pdf`} 
         className="resume-btn" target="_blank" rel="noopener noreferrer">
           <i className="fas fa-file-pdf"></i>
           Resume
