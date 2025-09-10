@@ -277,6 +277,8 @@ body {
 }
 
 .email-btn, .linkedin-btn, .resume-btn {
+  height: 50px;
+  width: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
