@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Main from './components/Main'
 import MusicPlayer from './components/MusicPlayer'
 import TechStack from './components/TechStack'
+import ScrollAnimation from './components/ScrollAnimation'
 
 export default function App() {
   return (
@@ -20,27 +21,41 @@ export default function App() {
       
       <main className='main-content'>
         <section id='hero' className='hero-section'>
-          <Header />
+          <ScrollAnimation animation='fade-in-delayed' delay={0}>
+            <Header />
+          </ScrollAnimation>
         </section>
         
         <section id='about' className='about-section'>
           <div className='section-container'>
-            <h2 className='section-title'>About Me</h2>
-            <Main />
+            <ScrollAnimation animation='slide-up' delay={0}>
+              <h2 className='section-title'>About Me</h2>
+            </ScrollAnimation>
+            <ScrollAnimation animation='fade-in-delayed' delay={2}>
+              <Main />
+            </ScrollAnimation>
           </div>
         </section>
         
         <section id='tech' className='tech-section'>
           <div className='section-container'>
-            <h2 className='section-title'>Tech Stack</h2>
-            <TechStack />
+            <ScrollAnimation animation='slide-up' delay={0}>
+              <h2 className='section-title'>Tech Stack</h2>
+            </ScrollAnimation>
+            <ScrollAnimation animation='scale-up' delay={2}>
+              <TechStack />
+            </ScrollAnimation>
           </div>
         </section>
         
         <section id='contact' className='contact-section'>
           <div className='section-container'>
-            <h2 className='section-title'>Let's Connect</h2>
-            <Footer />
+            <ScrollAnimation animation='slide-up' delay={0}>
+              <h2 className='section-title'>Let's Connect</h2>
+            </ScrollAnimation>
+            <ScrollAnimation animation='fade-in-delayed' delay={2}>
+              <Footer />
+            </ScrollAnimation>
           </div>
         </section>
       </main>
