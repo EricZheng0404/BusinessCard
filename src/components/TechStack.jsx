@@ -1,4 +1,4 @@
-import { FaAws, FaDocker, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAws, FaDocker, FaNodeJs, FaReact, FaJava } from "react-icons/fa";
 import { 
   SiGraphql, 
   SiKubernetes, 
@@ -7,7 +7,8 @@ import {
   SiPython, 
   SiRedis, 
   SiTailwindcss, 
-  SiTypescript 
+  SiTypescript,
+  SiGooglecloud
 } from "react-icons/si";
 
 export default function TechStack() {
@@ -61,6 +62,14 @@ export default function TechStack() {
         <div className="tech-skill">
           <SiTailwindcss className="tailwind-icon" />
           <span>TailwindCSS</span>
+        </div>
+        <div className="tech-skill">
+          <FaJava className="java-icon" />
+          <span>Java</span>
+        </div>
+        <div className="tech-skill">
+          <SiGooglecloud className="gcp-icon" />
+          <span>GCP</span>
         </div>
       </div>
     </div>

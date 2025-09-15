@@ -512,6 +512,8 @@ body {
 .tech-skill .kubernetes-icon { color: #326ce5; }
 .tech-skill .nextjs-icon { color: #000000; }
 .tech-skill .tailwind-icon { color: #06b6d4; }
+.tech-skill .java-icon { color: #ed8b00; }
+.tech-skill .gcp-icon { color: #4285f4; }
 
 /* Custom scrollbar styling */
 .container::-webkit-scrollbar {
