@@ -2,7 +2,7 @@
   "name": "businesscard",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ericzheng0404.github.io/BusinessCard",
+  "homepage": "https://ericzheng0404.dev",
   "type": "module",
   "scripts": {
     "dev": "vite",

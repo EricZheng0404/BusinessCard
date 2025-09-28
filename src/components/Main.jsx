@@ -1,4 +1,3 @@
-
 import ScrollAnimation from './ScrollAnimation';
 
 export default function Main() {
@@ -43,6 +42,8 @@ export default function Main() {
           </div>
         </div>
       </ScrollAnimation>
+
+      
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Main from './components/Main'
 import MusicPlayer from './components/MusicPlayer'
 import TechStack from './components/TechStack'
 import ScrollAnimation from './components/ScrollAnimation'
+// import Testimonials from './components/Testimonials'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <a href='#hero' className='nav-link'>Home</a>
           <a href='#about' className='nav-link'>About</a>
           <a href='#tech' className='nav-link'>Tech Stack</a>
+          {/* <a href='#testimonials' className='nav-link'>Testimonials</a> */}
           <a href='#contact' className='nav-link'>Contact</a>
         </div>
       </nav>
@@ -48,6 +50,12 @@ export default function App() {
           </div>
         </section>
         
+        {/* <section id='testimonials' className='testimonials-wrapper'>
+          <ScrollAnimation animation='fade-in-delayed' delay={0}>
+            <Testimonials />
+          </ScrollAnimation>
+        </section> */}
+        
         <section id='contact' className='contact-section'>
           <div className='section-container'>
             <ScrollAnimation animation='slide-up' delay={0}>
@@ -59,7 +67,7 @@ export default function App() {
           </div>
         </section>
       </main>
-      
+
       <MusicPlayer />
     </div>
   )
