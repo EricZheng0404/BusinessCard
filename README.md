@@ -1,4 +1,8 @@
-# React + Vite
+# Eric Zheng - Business Card Website
+
+A modern, interactive business card website built with React + Vite.
+
+**Live Site:** https://ericzheng0404.dev
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
