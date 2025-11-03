@@ -16,6 +16,7 @@ export default function App() {
           <a href='#hero' className='nav-link'>Home</a>
           <a href='#about' className='nav-link'>About</a>
           <a href='#tech' className='nav-link'>Tech Stack</a>
+          <a href='#projects' className='nav-link'>Projects</a>
           {/* <a href='#testimonials' className='nav-link'>Testimonials</a> */}
           <a href='#contact' className='nav-link'>Contact</a>
         </div>
@@ -39,7 +40,7 @@ export default function App() {
           </div>
         </section>
         
-        <section id='tech' className='tech-section'>
+        <section id='tech' className='tech-section' style={{paddingBottom: '100px', paddingTop: '100px'}}>
           <div className='section-container'>
             <ScrollAnimation animation='slide-up' delay={0}>
               <h2 className='section-title'>Tech Stack</h2>
@@ -50,11 +51,43 @@ export default function App() {
           </div>
         </section>
         
-        {/* <section id='testimonials' className='testimonials-wrapper'>
-          <ScrollAnimation animation='fade-in-delayed' delay={0}>
-            <Testimonials />
-          </ScrollAnimation>
-        </section> */}
+        <section id='projects' className='projects-section'>
+          <div className='section-container'>
+            <ScrollAnimation animation='slide-up' delay={0}>
+              <h2 className='section-title'>Featured Projects</h2>
+            </ScrollAnimation>
+            <ScrollAnimation animation='fade-in-delayed' delay={2}>
+              <div className='projects-grid'>
+                <div className='project-card'>
+                  <div className='project-icon'>
+                    <i className='fas fa-car'></i>
+                  </div>
+                  <h3>Car Rental</h3>
+                  <p>A full-stack car rental application with booking management and user authentication.</p>
+                  <a href='https://car-rental-gs.vercel.app/' 
+                     className='project-link' 
+                     target='_blank' 
+                     rel='noopener noreferrer'>
+                    <i className='fas fa-external-link-alt'></i> View Project
+                  </a>
+                </div>
+                <div className='project-card'>
+                  <div className='project-icon'>
+                    <i className='fas fa-database'></i>
+                  </div>
+                  <h3>DistribCache</h3>
+                  <p>A distributed caching system for high-performance data storage and retrieval.</p>
+                  <a href='https://github.com/EricZheng0404/DistribCache' 
+                     className='project-link' 
+                     target='_blank' 
+                     rel='noopener noreferrer'>
+                    <i className='fab fa-github'></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </section>
         
         <section id='contact' className='contact-section'>
           <div className='section-container'>
