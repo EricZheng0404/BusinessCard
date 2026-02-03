@@ -84,6 +84,19 @@ export default function App() {
                     <i className='fab fa-github'></i> View on GitHub
                   </a>
                 </div>
+                <div className='project-card'>
+                  <div className='project-icon'>
+                    <i className='fas fa-code'></i>
+                  </div>
+                  <h3>LibreSignal</h3>
+                  <p>A practice framework for CodeSignal's Industry Coding Framework (ICF) assessments.</p>
+                  <a href='https://github.com/EricZheng0404/LibreSignal' 
+                     className='project-link' 
+                     target='_blank' 
+                     rel='noopener noreferrer'>
+                    <i className='fab fa-github'></i> View on GitHub
+                  </a>
+                </div>
               </div>
             </ScrollAnimation>
           </div>
