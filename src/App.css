@@ -905,6 +905,25 @@ body {
   transition: all 0.3s ease;
 }
 
+.project-screenshot {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card--featured {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.project-card--featured:hover .project-screenshot {
+  transform: scale(1.02);
+  box-shadow: 0 16px 48px rgba(59, 130, 246, 0.25);
+}
+
 .project-card:hover .project-icon {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(255, 255, 255, 0.15));
   border-color: rgba(59, 130, 246, 0.5);

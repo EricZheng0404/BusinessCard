@@ -5,6 +5,7 @@ import Main from './components/Main'
 import MusicPlayer from './components/MusicPlayer'
 import TechStack from './components/TechStack'
 import ScrollAnimation from './components/ScrollAnimation'
+import distribcacheImg from './assets/distribcache.png'
 // import Testimonials from './components/Testimonials'
 
 export default function App() {
@@ -71,13 +72,15 @@ export default function App() {
                     <i className='fas fa-external-link-alt'></i> View Project
                   </a>
                 </div>
-                <div className='project-card'>
-                  <div className='project-icon'>
-                    <i className='fas fa-database'></i>
-                  </div>
+                <div className='project-card project-card--featured'>
+                  <img
+                    src={distribcacheImg}
+                    alt='DistribCache dashboard screenshot'
+                    className='project-screenshot'
+                  />
                   <h3>DistribCache</h3>
                   <p>A distributed caching system for high-performance data storage and retrieval.</p>
-                  <a href='https://github.com/EricZheng0404/DistribCache' 
+                  <a href='https://distribcache.fly.dev/' 
                      className='project-link' 
                      target='_blank' 
                      rel='noopener noreferrer'>
