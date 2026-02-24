@@ -6,6 +6,7 @@ import MusicPlayer from './components/MusicPlayer'
 import TechStack from './components/TechStack'
 import ScrollAnimation from './components/ScrollAnimation'
 import distribcacheImg from './assets/distribcache.png'
+import carRentalImg from './assets/car_rental.png'
 // import Testimonials from './components/Testimonials'
 
 export default function App() {
@@ -59,10 +60,14 @@ export default function App() {
             </ScrollAnimation>
             <ScrollAnimation animation='fade-in-delayed' delay={2}>
               <div className='projects-grid'>
-                <div className='project-card'>
-                  <div className='project-icon'>
-                    <i className='fas fa-car'></i>
-                  </div>
+                <div className='project-card project-card--featured'>
+                  <a href='https://car-rental-gs.vercel.app/' target='_blank' rel='noopener noreferrer'>
+                    <img
+                      src={carRentalImg}
+                      alt='Car Rental app screenshot'
+                      className='project-screenshot'
+                    />
+                  </a>
                   <h3>Car Rental</h3>
                   <p>A full-stack car rental application with booking management and user authentication.</p>
                   <a href='https://car-rental-gs.vercel.app/' 
@@ -73,11 +78,13 @@ export default function App() {
                   </a>
                 </div>
                 <div className='project-card project-card--featured'>
-                  <img
-                    src={distribcacheImg}
-                    alt='DistribCache dashboard screenshot'
-                    className='project-screenshot'
-                  />
+                  <a href='https://distribcache.fly.dev/' target='_blank' rel='noopener noreferrer'>
+                    <img
+                      src={distribcacheImg}
+                      alt='DistribCache dashboard screenshot'
+                      className='project-screenshot'
+                    />
+                  </a>
                   <h3>DistribCache</h3>
                   <p>A distributed caching system for high-performance data storage and retrieval.</p>
                   <a href='https://distribcache.fly.dev/' 
