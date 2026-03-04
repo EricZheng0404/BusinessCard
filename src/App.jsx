@@ -1,3 +1,4 @@
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -7,24 +8,44 @@ import TechStack from './components/TechStack'
 import ScrollAnimation from './components/ScrollAnimation'
 import distribcacheImg from './assets/distribcache.png'
 import carRentalImg from './assets/car_rental.png'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 // import Testimonials from './components/Testimonials'
+
+function NavBar() {
+  const location = useLocation()
+  const isHome = location.pathname === '/'
+  return (
+    <nav className='navigation'>
+      <div className='nav-brand'>
+        <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>Eric Zheng</Link>
+      </div>
+      <div className='nav-links'>
+        {isHome ? (
+          <>
+            <a href='#hero' className='nav-link'>Home</a>
+            <a href='#about' className='nav-link'>About</a>
+            <a href='#tech' className='nav-link'>Tech Stack</a>
+            <a href='#projects' className='nav-link'>Projects</a>
+            <a href='#contact' className='nav-link'>Contact</a>
+          </>
+        ) : (
+          <Link to='/' className='nav-link'>Home</Link>
+        )}
+        <Link to='/blog' className={`nav-link${location.pathname.startsWith('/blog') ? ' nav-link--active' : ''}`}>Blog</Link>
+      </div>
+    </nav>
+  )
+}
 
 export default function App() {
   return (
     <div className='app'>
-      <nav className='navigation'>
-        <div className='nav-brand'>Eric Zheng</div>
-        <div className='nav-links'>
-          <a href='#hero' className='nav-link'>Home</a>
-          <a href='#about' className='nav-link'>About</a>
-          <a href='#tech' className='nav-link'>Tech Stack</a>
-          <a href='#projects' className='nav-link'>Projects</a>
-          {/* <a href='#testimonials' className='nav-link'>Testimonials</a> */}
-          <a href='#contact' className='nav-link'>Contact</a>
-        </div>
-      </nav>
+      <NavBar />
       
-      <main className='main-content'>
+      <Routes>
+        <Route path='/' element={
+          <main className='main-content'>
         <section id='hero' className='hero-section'>
           <ScrollAnimation animation='fade-in-delayed' delay={0}>
             <Header />
@@ -123,6 +144,10 @@ export default function App() {
           </div>
         </section>
       </main>
+        } />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/:id' element={<BlogPost />} />
+      </Routes>
 
       <MusicPlayer />
     </div>
