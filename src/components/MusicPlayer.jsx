@@ -65,6 +65,7 @@ export default function MusicPlayer() {
   };
 
   const handleMouseDown = (e) => {
+    if (e.target.closest('button, input')) return;
     setIsDragging(true);
     setDragStart({
       x: e.clientX,
@@ -120,7 +121,7 @@ export default function MusicPlayer() {
         loop
         onEnded={() => setIsPlaying(false)}
       >
-        <source src="/BusinessCard/music/Beethoven.mp3" type="audio/mpeg" />
+        <source src={`${import.meta.env.BASE_URL}music/Beethoven.mp3`} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       
